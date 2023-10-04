@@ -7,6 +7,7 @@ body {
 
 .text {
 	text-align: center;
+	font-size: 13px;
 }
 
 .form p {
@@ -14,13 +15,43 @@ body {
 }
 
 .form {
-	width: 50%;
+	width: 100%;
 	margin: auto;
+
+}
+.form-out {
+    width: 40%;
+    margin: auto;
+    border: solid 1px black;
+    padding: 5%;
+    border-radius: 8px;
+    height: 88%;
+}
+.text-name-age input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 .submit {
 	width: 100%;
-	border-radius: 15px;
-	box-shadow: inset 0 -5px 4px rgba(0, 0, 0, 0.2);
-	background-color: white;
+	border-radius: 5px;
+    box-shadow: inset 0 -3px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border: 0.5px solid #8c8c9e;
+    margin-top: 13px;
+    padding: 9px;
+}
+
+.name {
+	display: flex;
+	margin: 10px 10px 10px;
+	border-bottom: solid 1px;
+}
+
+.age {
+	display: flex;
+	margin: 10px 10px 10px;
+	border-bottom: solid 1px;
+	padding-top: 10%;
 }

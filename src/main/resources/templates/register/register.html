@@ -3,17 +3,27 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="/css/style.css">
 	<script src="/js/script.js"></script>
 	<title>登録画面</title>
 </head>
 
 <body>
-	<h2>入力情報を確認して登録ボタンを押してください</h2>
-	名前：<strong th:text="${rb.name}"></strong><br>
-	年齢：<strong th:text="${rb.age}"></strong><br>
-	<input type="submit" value="登録">
-	<input type="reset" value="戻る">
+	<div class="text">
+		<h2>入力情報を確認して登録ボタンを押してください</h2>
+	</div>
+	<div class="form-out">
+		<div class="form">
+			<div class="name">
+				名前：<div th:text="${rb.name}"></div>
+			</div>
+			<div class="age">
+				年齢：<div th:text="${rb.age}"></div>歳
+			</div>
+			<input type="submit" value="登録" class="submit">
+			<input type="reset" value="戻る" class="submit">
+		</div>
+	</div>
 </body>
 
 </html>
