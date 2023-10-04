@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/styles.css">
+	<script src="/js/script.js"></script>
+	<title>登録画面</title>
+</head>
+
+<body>
+	<h2>入力情報を確認して登録ボタンを押してください</h2>
+	名前：<strong th:text="${rb.name}"></strong><br>
+	年齢：<strong th:text="${rb.age}"></strong><br>
+	<input type="submit" value="登録">
+	<input type="reset" value="戻る">
+</body>
+
+</html>

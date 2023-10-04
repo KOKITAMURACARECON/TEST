@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.Fortune;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,13 +10,13 @@ public class Fortune {
 	public String start() {
 		double fn = Math.random();
 		if (fn >= 0.7) {
-			return "greatFortune.html";
+			return "Fortune/greatFortune.html";
 		} else if (fn >= 0.4) {
-			return "middleFortune.html";
+			return "Fortune/middleFortune.html";
 		} else if (fn >= 0.1) {
-			return "smallFortune";
+			return "Fortune/smallFortune";
 		} else {
-			return "misFortune.html";
+			return "Fortune/misFortune.html";
 		}
 	}
 
